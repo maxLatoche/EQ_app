@@ -1,0 +1,375 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+	body {
+		background: rgba(5,3,212,1.0);
+	}
+	
+	#equalizer {
+		background-color: rgba(111,114,0,0.79);
+		position: relative;
+		width: 1334px;
+		height: 750px;
+		top: 100px;
+		left:100px;
+	}
+	
+	.sliderTrack{
+		position: absolute;
+		border-color: whitesmoke;
+		border: thin;
+		border-width: 3px;
+		width: 5px;
+		height: 450px;
+		border-radius: 2px;
+		background-color: black;
+		top: 100px;
+		
+	}
+	
+	.fader{
+		position: absolute;
+		top: 310px;
+	}
+	
+	/* escaping ids start with a number by "|3"+first digit+" "*/
+	#\32 0.fader {
+		position: absolute;
+		left: 96px;	
+	}
+	
+	#\32 5.fader {
+		position: absolute;
+		left: 132px;	
+	}
+
+	#\33 1.fader {
+		position: absolute;
+		left: 168px;	
+	}
+	
+	#\34 0.fader {
+		position: absolute;
+		left: 204px;	
+	}
+	
+	#\35 0.fader {
+		position: absolute;
+		left: 240px;	
+	}
+	
+	#\36 3.fader {
+		position: absolute;
+		left: 276px;	
+	}
+	
+	#\38 0.fader {
+		position: absolute;
+		left: 312px;	
+	}
+	
+	#\31 00.fader {
+		position: absolute;
+		left: 348px;	
+	}
+	
+	#\31 25.fader {
+		position: absolute;
+		left: 384px;	
+	}
+	
+	#\31 60.fader {
+		position: absolute;
+		left: 420px;	
+	}
+	
+	#\32 00.fader {
+		position: absolute;
+		left: 456px;	
+	}
+	
+	#\32 50.fader {
+		position: absolute;
+		left: 492px;	
+	}
+	
+	#\33 15.fader {
+		position: absolute;
+		left: 528px;	
+	}
+	
+	#\34 00.fader {
+		position: absolute;
+		left: 564px;	
+	}
+	
+	#\35 00.fader {
+		position: absolute;
+		left: 600px;	
+	}
+	
+	#\36 30.fader {
+		position: absolute;
+		left: 636px;	
+	}
+	
+	#\38 00.fader {
+		position: absolute;
+		left: 672px;	
+	}
+	
+	#\31 000.fader {
+		position: absolute;
+		left: 708px;	
+	}
+	
+	#\31 250.fader {
+		position: absolute;
+		left: 744px;	
+	}
+	
+	#\31 600.fader {
+		position: absolute;
+		left: 780px;	
+	}
+	
+	#\32 000.fader {
+		position: absolute;
+		left: 816px;	
+	}
+	
+	#\32 500.fader {
+		position: absolute;
+		left: 852px;	
+	}
+	
+	#\33 150.fader {
+		position: absolute;
+		left: 888px;	
+	}
+	
+	#\34 000.fader {
+		position: absolute;
+		left: 924px;	
+	}
+	
+	#\35 000.fader {
+		position: absolute;
+		left: 960px;	
+	}
+	
+	#\36 300.fader {
+		position: absolute;
+		left: 996px;	
+	}
+	
+	#\38 000.fader {
+		position: absolute;
+		left: 1032px;	
+	}
+	
+	#\31 0000.fader {
+		position: absolute;
+		left: 1068px;	
+	}
+	
+	#\31 2500.fader {
+		position: absolute;
+		left: 1104px;	
+	}
+	
+	#\31 6000.fader {
+		position: absolute;
+		left: 1140px;	
+	}
+	
+	#\32 0000.fader {
+		position: absolute;
+		left: 1176px;	
+	}
+	
+	/*controls*/
+	span.glyphicon-play {
+    	font-size: 4em;
+	}
+	
+	span.glyphicon-stop {
+    font-size: 4em;
+}
+	
+</style>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untitled Document</title>
+<script src="../Impetus.js"></script>
+<script src="./Pizzicato.js"></script>
+</head>
+
+<body>
+<body>
+<div class="container">
+		<div id="equalizer" style="width: 1334px; height: 750px; position: relative">
+		<!--slidertracks-->
+			<div class="sliderTrack"; style="left: 109px;"></div>
+			<div class="sliderTrack"; style="left: 145px;"></div>
+			<div class="sliderTrack"; style="left: 181px;"></div>
+			<div class="sliderTrack"; style="left: 217px;"></div>
+			<div class="sliderTrack"; style="left: 253px;"></div>
+			<div class="sliderTrack"; style="left: 289px;"></div>
+			<div class="sliderTrack"; style="left: 325px;"></div>
+			<div class="sliderTrack"; style="left: 361px;"></div>
+			<div class="sliderTrack"; style="left: 397px;"></div>
+			<div class="sliderTrack"; style="left: 433px;"></div>
+			<div class="sliderTrack"; style="left: 469px;"></div>
+			<div class="sliderTrack"; style="left: 505px;"></div>
+			<div class="sliderTrack"; style="left: 541px;"></div>
+			<div class="sliderTrack"; style="left: 577px;"></div>
+			<div class="sliderTrack"; style="left: 613px;"></div>
+			<div class="sliderTrack"; style="left: 649px;"></div>
+			<div class="sliderTrack"; style="left: 685px;"></div>
+			<div class="sliderTrack"; style="left: 721px;"></div>
+			<div class="sliderTrack"; style="left: 757px;"></div>
+			<div class="sliderTrack"; style="left: 793px;"></div>
+			<div class="sliderTrack"; style="left: 829px;"></div>
+			<div class="sliderTrack"; style="left: 865px;"></div>
+			<div class="sliderTrack"; style="left: 901px;"></div>
+			<div class="sliderTrack"; style="left: 937px;"></div>
+			<div class="sliderTrack"; style="left: 973px;"></div>
+			<div class="sliderTrack"; style="left: 1009px;"></div>
+			<div class="sliderTrack"; style="left: 1045px;"></div>
+			<div class="sliderTrack"; style="left: 1081px;"></div>
+			<div class="sliderTrack"; style="left: 1117px;"></div>
+			<div class="sliderTrack"; style="left: 1153px;"></div>
+			<div class="sliderTrack"; style="left: 1189px;"></div>
+			<div class="fader" id="20"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="25"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="31"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="40"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="50"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="63"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="80"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="100"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="125"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="160"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="200"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="250"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="315"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="400"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="500"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="630"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="800"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="1000"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="1250"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="1600"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="2000"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="2500"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="3150"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="4000"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="5000"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="6300"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="8000"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="10000"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="12500"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="16000"><img src="EQfader_beta.svg"/></div>
+			<div class="fader" id="20000"><img src="EQfader_beta.svg"/></div>
+  	<div style="position: absolute; top: 750px; left: 0px; width: 1334">
+  		<div>
+			<button type="button" class="btn btn-default" id="playButton" style="position: absolute; top:inherit; left: 612px">
+    	      <span class="glyphicon glyphicon-play"></span>
+    		</button>
+  		</div>
+  		<div>
+			<button type="button" class="btn btn-default" id="stopButton" style="position: absolute; top:inherit; left: 722px">
+    	      <span class="glyphicon glyphicon-stop"></span>
+    		</button>
+		</div>
+  		</div>
+	</div>  
+</div>
+
+<script>
+	//create HTML collection with all fader freq values
+	var faderGroupHTML = document.getElementsByClassName("fader"); //html collection
+	//create empty array to push fader variables to
+	var faderGroup = [];
+	//create empty array to dynamically create impetus vars
+	var faderImpetus = [];
+	
+	//html collection becomes array
+	for(i=0;i<=faderGroupHTML.length-1;i++){
+		faderGroup.push(faderGroupHTML[i]);
+	} 
+	
+	console.log(faderGroup);
+	
+	for(i=0;i<=faderGroup.length-1;i++){
+		//create id variable string from array element
+		var idString = faderGroup[i].id.toString();
+		//add proper escape chars so linked script's document.querySelector() doesn't throw an error
+		var elId = "#\\3"+idString[0]+" "+idString.substr(1);
+		//get styles from array element
+		var style = window.getComputedStyle(faderGroup[i]);
+		//store left style from array element
+		var styleLeft = style.getPropertyValue('left');
+		//create impetus event
+		faderImpetus[i] = new Impetus({
+        source: elId,
+		initialValues: [styleLeft, 310],
+        update: function(x, y) {
+			this.style.left = x + 'px';
+            this.style.top = y + 'px';
+        },
+		boundX: [styleLeft,styleLeft],
+		boundY: [79,529],
+		friction: 0.78,
+		bounce: false
+    });
+}//creates impetus vars
+</script>
+<script>
+	//create HTML collection with all freq values
+	var toneGroupHTML = document.getElementsByClassName("fader"); //html collection
+	//create empty array to push sound variables to
+	var toneGroup = [];
+	//create empty array to dynamically create pizzicato vars
+	var tonePizzicato = [];
+	
+	//html collection becomes array
+	for(i=0;i<=faderGroupHTML.length-1;i++){
+		toneGroup.push(toneGroupHTML[i]);
+	}
+	
+	for(i=0;i<=faderGroup.length-1;i++){
+		//create id variable string from array element
+		var elId = parseInt(faderGroup[i].id);
+		console.log(elId)
+		tonePizzicato[i] = new Pizzicato.Sound({ 
+			source: 'wave',
+        	options: { type: 'sine', frequency: elId }
+		});
+	}
+	
+	function playRandomTone() {
+		var playTone = tonePizzicato[(Math.random()*(tonePizzicato.length+1)).toFixed()];
+		function stopRandomTone() {
+			playTone.stop();
+		}
+		console.log(playTone);
+		playTone.play();
+		stopButton.addEventListener("click",stopRandomTone);
+	}
+	
+	
+
+	var playButton = document.getElementById("playButton");
+	var stopButton = document.getElementById("stopButton");
+	
+	playButton.addEventListener("click",playRandomTone);
+	
+	
+</script>
+</body>
+</html>

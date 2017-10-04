@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script src="./Pizzicato.js"></script>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.slider.min.js"></script>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.slider.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<button id="Button1">Play</button>
+<button id="Button2">Stop</button>
+<div style="margin-top:20px; margin-left: 65px" id="Slider1"></div>
+
+<script type="text/javascript">
+$(function() {
+	//instantiate sound and effect variables
+	var sound = new Pizzicato.Sound({ 
+        source: 'wave',
+        options: { type: 'sine', frequency: 200 }
+	});
+	
+	//create jQuery elements for controls on page
+	$( "#Button1" ).button(); 
+	$( "#Button2" ).button(); 
+	$( "#Slider1" ).slider({
+		orientation: "vertical",
+		value: 50,
+	});
+	
+	//plays sound at 50% volume
+	$( "#Button1" ).click(function() {
+		sound.attack = 3;
+		sound.volume = 0.5;
+        sound.play();
+    });
+	
+	//stops sound
+	
+	$( "#Button2" ).click(function() {
+		sound.release = .9;
+		sound.stop();
+    });
+});
+
+</script>
+</body>
+</html>
